@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<!--    <script src="./main.js"></script>-->
-<!--    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>-->
 </head>
 <body>
 <div id="test" sd-on-click="changeMessage | .button">
@@ -13,20 +11,18 @@
     <p class="button" sd-text="msg"></p>
     <p sd-class-red="error" sd-text="hello"></p>
 </div>
-<script type="module">
-    import Test from './script/main.js'
-    var app = Test.create({
-        id: 'test',
-        // template
-        scope: {
-            msg: 'hello',
-            hello: 'WHWHWHW',
-            changeMessage: function () {
-                app.scope.msg = 'hola'
-            }
-        }
-    })
-
-</script>
+<!--<script type="module">-->
+<!--    var app = Test.create({-->
+<!--        id: 'test',-->
+<!--        // template-->
+<!--        scope: {-->
+<!--            msg: 'hello',-->
+<!--            hello: 'WHWHWHW',-->
+<!--            changeMessage: function () {-->
+<!--                app.scope.msg = 'hola'-->
+<!--            }-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
 </body>
 </html>

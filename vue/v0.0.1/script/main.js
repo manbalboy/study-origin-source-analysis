@@ -1,5 +1,6 @@
 import Filters from './filters.js';
 import Directives from './directives.js';
+import TestA from './Test.js';
 var prefix = 'sd',
   selector = Object.keys(Directives)
     .map(function (d) {
@@ -145,4 +146,6 @@ const Test = {
   directives: Directives,
 };
 
-export default Test;
+
+Test.create(TestA);
+
