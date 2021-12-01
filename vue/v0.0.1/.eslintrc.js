@@ -5,23 +5,32 @@ module.exports = {
     node: true,
   },
   extends: [
-    // 'airbnb-base',
+    'eslint:recommended',
+    // 'eslint:recommended',
   ],
+  plugins: ['prettier'],
   parserOptions: {
-    ecmaVersion: 2018,
+    parser: 'babel-eslint',
     sourceType: 'module',
   },
   rules: {
-    'no-param-reassign': 0,
-    'prefer-rest-params': 0,
-    'guard-for-in': 0,
-    'no-restricted-syntax': 0,
-    'no-use-before-define': 0,
-    'import/no-import-module-exports': 0,
-    'no-multi-assign': 0,
-    'no-prototype-builtins': 0,
-    'no-undef': 0,
-    'consistent-return': 0,
-    'no-unused-vars': 0,
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        semi: true,
+        useTabs: false,
+        tabWidth: 2,
+        trailingComma: 'all',
+        printWidth: 80,
+        bracketSpacing: true,
+        arrowParens: 'avoid', //가능하면 생략 , always 항상 써야한다.
+        proseWrap: 'preserve',
+        jsxBracketSameLine: false,
+        htmlWhitespaceSensitivity: 'strict',
+        vueIndentScriptAndStyle: true, // script 영역의 들여쓰기  true false
+        endOfLine: 'auto',
+      },
+    ],
   },
 };

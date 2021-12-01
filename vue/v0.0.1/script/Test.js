@@ -5,7 +5,8 @@ export default {
     msg: 'hello',
     hello: 'WHWHWHW',
     changeMessage: function () {
-      app.scope.msg = 'hola'
-    }
-  }
-}
+      // eslint-disable-next-line no-undef
+      app.scope.msg = 'hola';
+    },
+  },
+};
